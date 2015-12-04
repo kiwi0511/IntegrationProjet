@@ -1,0 +1,89 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/LightGreen200">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="435dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="0.61">
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Gestion Evènement"
+            android:textStyle="bold"
+            android:textColor="@color/LightGreen700"
+            android:gravity="center"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="15dp"
+            />
+
+        <ListView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvk2"
+            android:layout_centerHorizontal="true"
+            android:layout_above="@+id/bouton_creationEvent"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Créez votre propre évenement!"
+            android:id="@+id/bouton_creationEvent"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true" />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/lv2"
+            android:layout_row="0"
+            android:layout_column="0"/>
+
+    </RelativeLayout>
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="82dp"
+        android:layout_gravity="center_horizontal|bottom"
+        android:background="@drawable/barre">
+
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/bouton_event"
+            android:background="@drawable/button_event_menu"
+            android:layout_gravity="center"
+            android:layout_marginLeft="31dp"
+            android:layout_alignTop="@+id/bouton_accueil"
+            android:layout_toStartOf="@+id/bouton_accueil" />
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/bouton_accueil"
+            android:background="@drawable/button_accueil_menu"
+            android:layout_marginLeft="34dp"
+            android:layout_alignTop="@+id/bouton_profil"
+            android:layout_centerHorizontal="true" />
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/bouton_profil"
+            android:background="@drawable/button_profil_menu"
+            android:layout_marginLeft="33dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="71dp" />
+
+    </RelativeLayout>
+</FrameLayout>

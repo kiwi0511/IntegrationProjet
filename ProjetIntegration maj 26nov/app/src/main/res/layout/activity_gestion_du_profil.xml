@@ -1,0 +1,177 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/LightGreen200">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="@color/LightGreen700"
+            android:text="Profil"
+            android:id="@+id/textView4"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="82dp"
+        android:layout_gravity="center_horizontal|bottom"
+        android:background="@drawable/barre">
+
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/bouton_event"
+            android:background="@drawable/button_event_menu"
+            android:layout_gravity="center"
+            android:layout_marginLeft="31dp"
+            android:layout_alignTop="@+id/bouton_accueil"
+            android:layout_toStartOf="@+id/bouton_accueil" />
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/bouton_accueil"
+            android:background="@drawable/button_accueil_menu"
+            android:layout_marginLeft="34dp"
+            android:layout_alignTop="@+id/bouton_profil"
+            android:layout_centerHorizontal="true" />
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/bouton_profil"
+            android:background="@drawable/button_profil_menu"
+            android:layout_marginLeft="33dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="71dp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center">
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:hint="Nom"
+            android:ems="10"
+            android:id="@+id/nameProfil"
+            android:paddingLeft="10dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:hint="Prénom"
+            android:ems="10"
+            android:id="@+id/first_nameProfil"
+            android:paddingLeft="10dp"
+            android:layout_below="@+id/nameProfil"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:ems="10"
+            android:id="@+id/passwordProfil"
+            android:paddingLeft="10dp"
+            android:hint="Mot de passe"
+            android:layout_alignStart="@+id/new_passProfil"
+            android:layout_below="@+id/first_nameProfil" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:ems="10"
+            android:id="@+id/new_passProfil"
+            android:paddingLeft="10dp"
+            android:hint="Nouveau pass"
+            android:layout_alignStart="@+id/confirm_passProfil"
+            android:layout_marginTop="39dp"
+            android:layout_below="@+id/first_nameProfil" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:ems="10"
+            android:id="@+id/confirm_passProfil"
+            android:paddingLeft="10dp"
+            android:hint="Confirmation"
+            android:layout_below="@+id/new_passProfil"
+            android:layout_alignStart="@+id/first_nameProfil" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Confirmation"
+            android:id="@+id/confirmProfil"
+            android:layout_below="@+id/confirm_passProfil"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="47dp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/avatarProfil"
+            android:background="@drawable/pro"
+            android:clickable="true"
+            android:layout_alignParentTop="true"
+            android:layout_above="@+id/textView2"
+            android:layout_alignStart="@+id/textView"
+            android:layout_toStartOf="@+id/nameProfil" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ancien mot de passe"
+            android:id="@+id/textView"
+            android:layout_below="@+id/avatarProfil"
+            android:layout_toLeftOf="@+id/passwordProfil"
+            android:layout_above="@+id/textView2" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nouveau mot de passe"
+            android:id="@+id/textView2"
+            android:layout_alignRight="@+id/avatarProfil"
+            android:layout_above="@+id/confirm_passProfil"
+            android:layout_alignLeft="@+id/textView"
+            android:layout_alignStart="@+id/textView"
+            android:layout_alignTop="@+id/new_passProfil" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Confirmer nouveau mot de passe"
+            android:id="@+id/textView3"
+            android:layout_below="@+id/new_passProfil"
+            android:layout_alignBottom="@+id/confirm_passProfil"
+            android:layout_alignEnd="@+id/textView"
+            android:layout_alignStart="@+id/textView2" />
+
+    </RelativeLayout>
+</FrameLayout>

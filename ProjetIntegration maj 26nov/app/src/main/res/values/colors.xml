@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="northPointer">#FF0000</color>
+    <color name="southPointer">#000000</color>
+    <color name="compassCircle">#CCCCFF</color>
+
+    <color name="LightGreen50">#F1F8E9</color>
+    <color name="LightGreen100">#DCEDC8</color>
+    <color name="LightGreen200">#C5E1A5</color>
+    <color name="LightGreen300">#AED581</color>
+    <color name="LightGreen400">#9CCC65</color>
+    <color name="LightGreen500">#8BC34A</color>
+    <color name="LightGreen600">#7CB342</color>
+    <color name="LightGreen700">#689f38</color>
+</resources>

@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">ProjetIntegration</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_creation_evenement_p2">Map</string>
+    <string name="title_activity_jeux_de_piste">Map</string>
+</resources>
